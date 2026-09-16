@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# 画像データ
+train_images/
+healthy_images/
+test_images/
+val_images/
+preprocessed_images/
+preprocessed_green_images/
+vessel_overlays/
+fundus_masks/
+vessel_masks/
+vessel_skeletons/
+
+# 生成結果
+color_visualization/
+complexity_graphs/
+complexity_top10/
+vessel_extraction_debug/
+vessel_extraction_results/
+
+# 一時フォルダ
+complexity_debug/
+complexity_debug_after_preprocessing/
+complexity_debug_frangi_blackhat/
+complexity_debug_samples/
+vessel_debug_samples/
+vessel_debug_samples_tmp/
+vessel_extracted_images/
+vessel_extracted_images_tmp/
