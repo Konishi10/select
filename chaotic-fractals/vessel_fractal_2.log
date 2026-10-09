@@ -1,0 +1,30 @@
+2026-10-07 09:08:43.273158: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-10-07 09:08:43.417610: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-07 09:08:44.073826: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/user/.anaconda3/lib/python3.9/site-packages/cv2/../../lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2026-10-07 09:08:44.073887: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/user/.anaconda3/lib/python3.9/site-packages/cv2/../../lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2026-10-07 09:08:44.073895: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+[Using OpenGL with EGL]
+Traceback (most recent call last):
+  File "/home/user/work/select/chaotic-fractals/base/scripts/chaotic_fractals.py", line 53, in <module>
+    suite()
+  File "/home/user/.anaconda3/lib/python3.9/site-packages/click/core.py", line 1128, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/user/.anaconda3/lib/python3.9/site-packages/click/core.py", line 1053, in main
+    rv = self.invoke(ctx)
+  File "/home/user/.anaconda3/lib/python3.9/site-packages/click/core.py", line 1395, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/user/.anaconda3/lib/python3.9/site-packages/click/core.py", line 754, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/user/work/select/chaotic-fractals/base/scripts/chaotic_fractals.py", line 41, in suite
+    trainer = FractalTrainer(args, gt_img)
+  File "/home/user/work/select/chaotic-fractals/base/trainers/trainer.py", line 40, in __init__
+    self.gt_img = image_to_tensor(self.gt_img, to_cuda=True)      
+  File "/home/user/.anaconda3/lib/python3.9/site-packages/cf/images/conversions.py", line 25, in image_to_tensor
+    tensor = torch.from_numpy(np.transpose(img, (2, 0, 1)))
+  File "<__array_function__ internals>", line 180, in transpose
+  File "/home/user/.anaconda3/lib/python3.9/site-packages/numpy/core/fromnumeric.py", line 660, in transpose
+    return _wrapfunc(a, 'transpose', axes)
+  File "/home/user/.anaconda3/lib/python3.9/site-packages/numpy/core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+ValueError: axes don't match array

@@ -24,8 +24,8 @@ vessel_skeletons/
 color_visualization/
 complexity_graphs/
 complexity_top10/
-vessel_extraction_debug/
-vessel_extraction_results/
+vessel_debug_20/
+vessel_extracted/
 
 # 一時フォルダ
 complexity_debug/
